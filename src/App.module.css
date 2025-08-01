@@ -5,7 +5,6 @@
 
 .grid_items {
   padding: 2rem 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,16 +12,17 @@
 }
 
 .card {
-  background: #f9f9f9;
-  border: 1px solid #e5e7eb;
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   font-weight: 500;
+  color: var(--color-text);
 }
 
-/* pagination-ross */
+/* styles for pagination-ross */
 ::selection {
   background: transparent;
 }
@@ -45,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-text);
 }
 
 .button:focus-visible {
@@ -69,18 +70,19 @@
   justify-content: center;
   font-size: 0.85rem;
   border-radius: 0.25rem;
-  background-color: #f3f3f3;
+  background-color: var(--pagination-item-background);
+  color: var(--color-text);
   cursor: pointer;
 }
 
 .item:hover {
-  background-color: #e0e0e0;
-  color: #333;
+  background-color: var(--pagination-item-hover);
+  color: var(--color-text);
 }
 
 .itemActive {
-  background-color: #333;
-  color: white;
+  background-color: var(--pagination-item-active-background);
+  color: var(--pagination-item-active-text);
 }
 
 .ellipsis {
@@ -89,5 +91,5 @@
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--pagination-ellipsis-text);
 }
